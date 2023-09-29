@@ -6,7 +6,13 @@ namespace PierresVendorsAndOrders.Controllers
 {
   public class OrdersController : Controller
   {
-    [HttpGet("vendors/{vendorId}/orders/new")]
+    [HttpGet("/vendors/{vendorId}/orders")]
+    public ActionResult Index()
+    {
+      List<Order> allOrders = Order.GetAll();
+      return View(allOrders);
+    }
+    [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
