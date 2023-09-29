@@ -9,9 +9,12 @@ h1 {
 .links {
   text-align: center;
   margin: auto;
-  margin-top: 160px;
+  margin-top: 75px;
+  padding-top: 10px;
+  padding-bottom: 25px;
   width: 500px;
-  height: 250px;
+  background-color: rgba(0, 0, 0, 0.608);
+  border-radius: 25px;
 }
 
 h3 {

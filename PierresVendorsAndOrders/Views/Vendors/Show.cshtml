@@ -6,9 +6,10 @@
 
 <div class="links">
   
-  <h2>@Model["vendor"].Name 
+  <h1>@Model["vendor"].Name 
   <br />  
-  Order List:</h2>
+  Order List:</h1>
+  <br />
 
   @if (!((List<Order>)Model["orders"]).Any())
   {
@@ -18,7 +19,7 @@
   <ol>
   @foreach (Order order in @Model["orders"])
   {
-    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Id. @order.Product</a></li>
+    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Product | ID #@order.Id</a></li>
   }
   </ol>
   <a href='/vendors/@Model["vendor"].Id/orders/new'>New Order |</a>
