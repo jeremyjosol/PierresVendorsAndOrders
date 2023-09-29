@@ -48,8 +48,9 @@ namespace PierresVendorsAndOrders.Tests
       Vendor newVendor1 = new Vendor(businessName01);
       Vendor newVendor2 = new Vendor(businessName02);
       Vendor result = Vendor.Find(1);
+      Vendor result2 = Vendor.Find(2);
       Assert.AreEqual(newVendor1, result);
-
+      Assert.AreEqual(newVendor2, result2);
     }
   }
 }
