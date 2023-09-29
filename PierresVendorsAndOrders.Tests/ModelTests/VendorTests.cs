@@ -40,5 +40,16 @@ namespace PierresVendorsAndOrders.Tests
       List<Vendor> result = Vendor.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void Find_ReturnsCorrectVendor_Vendor()
+    {
+      string businessName01 = "St. Honoré";
+      string businessName02 = "La Provence";
+      Vendor newVendor1 = new Vendor(businessName01);
+      Vendor newVendor2 = new Vendor(businessName02);
+      Vendor result = Vendor.Find(1);
+      Assert.AreEqual(newVendor1, result);
+
+    }
   }
 }
