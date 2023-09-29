@@ -6,6 +6,11 @@
 
     <h3>Orders:</h3>
 
+    @if (!((List<Order>)Model["orders"]).Any())
+    {
+      <p>Your order list is empty.</p>
+    }
+
     <ol>
     @foreach (Order order in @Model["orders"])
     {
@@ -14,5 +19,5 @@
     </ol>
 
     <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new product</a></p>
-    <p><a href='/albums'>Return to vendor list</a></p>
+    <p><a href='/vendors'>Return to vendor list</a></p>
     <p><a href='/'>Return to Main Page</a></p>
