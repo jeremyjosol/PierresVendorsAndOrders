@@ -4,9 +4,13 @@
 
 @using PierresVendorsAndOrders.Models;
 
-    <h1>Vendor Order Details: </h1>
+<div class="links">
 
-    <h2>@Model["order"].Product</h2>
+  <h1>Vendor Order Details: </h1>
 
-    <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another product</a>
-    <a href='/vendors/@Model["vendor"].Id/'>View all orders</a>
+  <h2>@Model["order"].Product</h2>
+
+  <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another product</a>
+  <a href='/vendors/@Model["vendor"].Id/'>View all orders</a>
+  
+</div>
