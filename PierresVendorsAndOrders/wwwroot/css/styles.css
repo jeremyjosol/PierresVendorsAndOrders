@@ -2,6 +2,13 @@ html {
   text-align: center;
 }
 
+body {
+  background-image: url("../img/bakery.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 h1 {
   text-align: center;
 }
