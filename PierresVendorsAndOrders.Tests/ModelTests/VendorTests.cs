@@ -21,5 +21,13 @@ namespace PierresVendorsAndOrders.Tests
       string result = newVendor.Name;
       Assert.AreEqual(businessName, result);
     }
+    [TestMethod]
+    public void VendorId_ReturnsVendorId_Int()
+    {
+      string businessName = "St. Honoré";
+      Vendor newVendor = new Vendor(businessName);
+      int result = newVendor.Id;
+      Assert.AreEqual(1, result);
+    }
   }
 }
