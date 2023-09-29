@@ -1,3 +1,30 @@
+html {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.links {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+  margin-left: 0;
+}
+
+
+li {
+  margin: auto;
+  margin-right: 25px;
+}
+
 div#footer {
   position:fixed;
   bottom:0px;
