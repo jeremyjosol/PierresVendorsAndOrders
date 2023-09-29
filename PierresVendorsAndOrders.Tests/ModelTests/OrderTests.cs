@@ -31,5 +31,13 @@ namespace PierresVendorsAndOrders.Tests
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void GetId_SongsInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      string productName = "Croissant";
+      Order newOrder = new Order(productName);
+      int result = newOrder.Id;
+      Assert.AreEqual(1, result);
+    }
   }
 }
