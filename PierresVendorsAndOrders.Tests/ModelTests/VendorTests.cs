@@ -52,5 +52,17 @@ namespace PierresVendorsAndOrders.Tests
       Assert.AreEqual(newVendor1, result);
       Assert.AreEqual(newVendor2, result2);
     }
+    [TestMethod]
+    public void AddOrder_EstablishesRelationshipWithVendor_OrderList()
+    {
+      string productName = "Croissant";
+      Order newOrder = new Order(productName);
+      List<Order> newList = new List<Order> { newOrder };
+      string vendorName = "St. Honoré";
+      Vendor newVendor = new Vendor(vendorName);
+      newVendor.AddOrder(newOrder);
+      List<Order> result = newVendor.Orders;
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
