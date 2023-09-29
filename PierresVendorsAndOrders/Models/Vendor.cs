@@ -15,6 +15,7 @@ namespace PierresVendorsAndOrders.Models
       Name = businessName;
       _instances.Add(this);
       Id = _instances.Count;
+      Orders = new List<Order>{};
     }
     public static void ClearAll()
     {
@@ -27,6 +28,10 @@ namespace PierresVendorsAndOrders.Models
     public static Vendor Find(int searchId)
     {
       return _instances[searchId - 1];
+    }
+    public void AddOrder(Order productName)
+    {
+      Orders.Add(productName);
     }
   }
 }
