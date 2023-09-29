@@ -20,5 +20,16 @@ namespace PierresVendorsAndOrders.Tests
       string result = newOrder.Product;
       Assert.AreEqual(productName, result);
     }
+    [TestMethod]
+    public void GetAll_ReturnsAllSongObjects_OrderList()
+    {
+      string productName01 = "Croissant";
+      string productName02 = "Baguette";
+      Order newOrder1 = new Order(productName01);
+      Order newOrder2 = new Order(productName02);
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
