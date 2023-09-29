@@ -13,5 +13,13 @@ namespace PierresVendorsAndOrders.Tests
     {
       Vendor.ClearAll();
     }
+    [TestMethod]
+    public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
+    {
+      string businessName = "St. Honoré";
+      Vendor newVendor = new Vendor(businessName);
+      string result = newVendor.Name;
+      Assert.AreEqual(businessName, result);
+    }
   }
 }
