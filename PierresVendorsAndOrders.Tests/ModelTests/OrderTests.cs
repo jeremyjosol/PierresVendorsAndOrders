@@ -12,5 +12,13 @@ namespace PierresVendorsAndOrders.Tests
     {
       Order.ClearAll();
     }
+    [TestMethod]
+    public void OrderConstructor_CreatesInstanceOfOrder_Order()
+    {
+      string productName = "Croissant";
+      Order newOrder = new Order(productName);
+      string result = newOrder.Product;
+      Assert.AreEqual(productName, result);
+    }
   }
 }
