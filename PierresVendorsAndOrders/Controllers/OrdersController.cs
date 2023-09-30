@@ -29,10 +29,14 @@ namespace PierresVendorsAndOrders.Controllers
       return View(model);
     }
     [HttpPost("/vendors/{vendorId}/orders/delete")]
-    public ActionResult DeleteAll()
+    public ActionResult DeleteAll(int vendorId)
     {
-      Order.ClearAll();
-      return RedirectToAction("Index");
+      Vendor vendorOrders = Vendor.Find(vendorId);
+      if (vendorOrders != null)
+      {
+        vendorOrders.ClearOrders();
+      }
+      return RedirectToAction("Index", "Vendors");
     }
   }
 }
