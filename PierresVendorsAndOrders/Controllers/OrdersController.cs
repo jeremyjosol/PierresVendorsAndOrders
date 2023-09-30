@@ -38,5 +38,20 @@ namespace PierresVendorsAndOrders.Controllers
       }
       return RedirectToAction("Index", "Vendors");
     }
+    [HttpPost("/vendors/{vendorId}/orders/{orderId}/delete")]
+    public ActionResult DeleteOrder(int vendorId, int orderId)
+    {
+      Vendor vendorOrders = Vendor.Find(vendorId);
+      if (vendorOrders != null)
+      {
+        Order order = Order.Find(orderId);
+        if (order != null)
+        {
+          vendorOrders.Orders.Remove(order);
+          return RedirectToAction("Index", "Vendors");
+        }
+      }
+      return RedirectToAction("Index", "Vendors");
+    }
   }
 }
