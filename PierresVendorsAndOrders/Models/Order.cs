@@ -20,6 +20,8 @@ namespace PierresVendorsAndOrders.Models
     public Order(string product, string productDescription, decimal productPrice, string orderDate)
     {
       Product = product;
+      _instances.Add(this);
+      Id = _instances.Count;
       Description = productDescription;
       Price = productPrice;
       Date = orderDate;

@@ -7,9 +7,18 @@
 <div class="links">
 
   <h1>@Model["vendor"].Name Order Details: </h1>
-
-  <h2>@Model["order"].Product | ID #@Model["order"].Id</h2>
-
+  <br />
+  <h3>Product:</h3>
+  <h5>@Model["order"].Product</h5>
+  <h3>Description:</h3>
+  <h5>@Model["order"].Description</h5>
+  <h3>Price:</h3>
+  <h5>$@Model["order"].Price</h5>
+  <h3>Order date:</h3> 
+  <h5>@Model["order"].Date</h5> 
+  <h3>Order ID:</h3>
+  <h5>#00-00-@Model["order"].Id</h5>
+  <br />
   <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another product | </a>
   <a href='/vendors/@Model["vendor"].Id/'>View all orders</a>
 
