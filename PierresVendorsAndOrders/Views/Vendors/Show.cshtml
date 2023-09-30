@@ -8,12 +8,12 @@
   
   <h1>@Model["vendor"].Name 
   <br />  
-  Order List:</h1>
+  Orders:</h1>
   <br />
 
   @if (!((List<Order>)Model["orders"]).Any())
   {
-    <p>The order list for @Model["vendor"].Name is empty.</p>
+    <p>Your order list for @Model["vendor"].Name is empty.</p>
   }
     
   <ol>
@@ -31,7 +31,7 @@
 
   <br />
   <br />
-  
+
   <div class="button-container">
   <form action='/vendors/@Model["vendor"].Id/delete' method="post">
     <button type="submit" name="button" class="btn btn-danger btn-sm">Delete Vendor</button>
