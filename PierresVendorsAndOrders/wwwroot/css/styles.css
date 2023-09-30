@@ -12,12 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-  text-align: center;
-}
-
 .links {
-  text-align: center;
   margin: auto;
   margin-top: 75px;
   padding-top: 10px;
@@ -38,7 +33,6 @@ ol {
   list-style: none;
   margin-left: 0;
 }
-
 
 li {
   margin: auto;
