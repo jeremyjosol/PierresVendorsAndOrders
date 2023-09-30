@@ -6,10 +6,10 @@
 
 <div class="links">
   
-  <h1>@Model["vendor"].Name 
+  <h1>@Model["vendor"].Name</h1>
+  <h2><em>@Model["vendor"].Description</em></h2> 
   <br />  
-  Orders:</h1>
-  <br />
+  <h3>Orders:</h3>
 
   @if (!((List<Order>)Model["orders"]).Any())
   {
