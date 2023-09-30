@@ -48,7 +48,7 @@ namespace PierresVendorsAndOrders.Controllers
         if (order != null)
         {
           vendorOrders.Orders.Remove(order);
-          return RedirectToAction("Index", "Vendors");
+          return RedirectToAction("Show", "Vendors", new { id = vendorId });
         }
       }
       return RedirectToAction("Index", "Vendors");
