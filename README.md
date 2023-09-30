@@ -23,6 +23,16 @@ Pierre, the artisan baker, inquired about a new project for a web application ta
 * _C#_
 * _.NET_
 
+## Available Routes
+
+* localhost:5000/
+* localhost:5000/vendors
+* localhost:5000/vendors/new
+* localhost:5000/vendors/{id}
+* localhost:5000/vendors/{id}/orders
+* localhost:5000/vendors/{id}/orders/new
+* localhost:5000/vendors/{id}/orders/{id}
+
 ## Known Bugs
 
 Currently no known bugs. If any issues are identified, please kindly address the issue to the owner of this repository.
