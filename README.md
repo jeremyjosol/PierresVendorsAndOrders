@@ -4,6 +4,8 @@
 
 Pierre, the artisan baker, inquired about a new project for a web application tailored to revitalize his bakery's vendor and order management following the success of our first console application we designed for him. This new application welcomes him with a minimalistic yet stylish splash page, offering a user-friendly interface crafted with the MVC (Model, View, Controller) model and Razor syntax. Pierre can easily create new vendor lists, add orders to the relevant vendor, delete all vendors/orders, and or choose to delete vendors/orders individually to help keep track of Pierre's Bakery business.
 
+![PierresPortal.jpg](https://github.com/jeremyjosol/sep292023_PierresVendorsAndOrders/blob/patch/PierresPortal.jpg?raw=true)
+
 ## Application Setup
 
 1. Clone the repository `https://github.com/jeremyjosol/sep222023_PierresVendorsAndOrders`
