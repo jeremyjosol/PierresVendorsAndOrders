@@ -63,3 +63,11 @@ div#footer {
 .button-container form {
   margin-right: 10px;
 }
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: tan;
+}
