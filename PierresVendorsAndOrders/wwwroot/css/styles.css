@@ -54,3 +54,12 @@ div#footer {
   background:#333;
   padding:8px;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container form {
+  margin-right: 10px;
+}

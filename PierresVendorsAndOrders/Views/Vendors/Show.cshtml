@@ -24,15 +24,20 @@
   </form></li>
   }
   </ol>
+
   <a href='/vendors/@Model["vendor"].Id/orders/new'>New Order |</a>
   <a href='/vendors'>View Vendors |</a>
   <a href='/'>Home</a>
+
   <br />
   <br />
+  
+  <div class="button-container">
   <form action='/vendors/@Model["vendor"].Id/delete' method="post">
     <button type="submit" name="button" class="btn btn-danger btn-sm">Delete Vendor</button>
   </form>
   <form action='/vendors/@Model["vendor"].Id/orders/delete' method="post">
     <button type="submit" name="button" class="btn btn-danger btn-sm">Delete Orders</button>
   </form>
+  </div>
 </div>
