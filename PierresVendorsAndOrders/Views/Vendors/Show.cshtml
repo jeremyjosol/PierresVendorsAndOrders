@@ -13,7 +13,7 @@
 
   @if (!((List<Order>)Model["orders"]).Any())
   {
-    <p>Your order list is empty.</p>
+    <p>The order list for @Model["vendor"].Name is empty.</p>
   }
     
   <ol>
