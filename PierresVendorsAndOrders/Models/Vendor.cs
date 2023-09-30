@@ -9,10 +9,19 @@ namespace PierresVendorsAndOrders.Models
     public string Name { get; set; }
     public int Id { get; }
     public List<Order> Orders { get; set; }
+    public string Description { get; set; }
 
     public Vendor(string businessName)
     {
       Name = businessName;
+      _instances.Add(this);
+      Id = _instances.Count;
+      Orders = new List<Order>{};
+    }
+    public Vendor(string businessName, string businessDescription)
+    {
+      Name = businessName;
+      Description = businessDescription;
       _instances.Add(this);
       Id = _instances.Count;
       Orders = new List<Order>{};
