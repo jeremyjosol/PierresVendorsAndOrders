@@ -13,14 +13,16 @@
   {
     <h3>No vendors have been added yet!</h3>
   } 
-
-  @foreach (Vendor vendor in Model)
+  else
   {
-    <h3><a href='/vendors/@vendor.Id'>@vendor.Name</a></h3>
+    @foreach (Vendor vendor in Model)
+    {
+      <h3><a href='/vendors/@vendor.Id'>@vendor.Name</a></h3>
+    }
+    <br />
+    <form action="/vendors/delete" method="post">
+      <button type="submit" name="button" class="btn btn-danger btn-sm">Delete All</button>
+  </form>
   }
   <p><a href='/'>Back home</a></p>
-  <form action="/vendors/delete" method="post">
-    <button type="submit" name="button" class="btn btn-danger btn-sm">Delete All</button>
-  </form>
-
 </div>
