@@ -33,5 +33,9 @@ namespace PierresVendorsAndOrders.Models
     {
       Orders.Add(productName);
     }
+    public void ClearOrders()
+    {
+      Orders.Clear();
+    }
   }
 }
