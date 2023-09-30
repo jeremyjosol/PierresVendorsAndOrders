@@ -28,5 +28,11 @@ namespace PierresVendorsAndOrders.Controllers
       model.Add("vendor", vendor);
       return View(model);
     }
+    [HttpPost("/vendors/delete")]
+    public ActionResult DeleteAll()
+    {
+      Order.ClearAll();
+      return RedirectToAction("Index");
+    }
   }
 }
