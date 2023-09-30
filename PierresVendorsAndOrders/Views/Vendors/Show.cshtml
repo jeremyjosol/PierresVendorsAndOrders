@@ -24,5 +24,8 @@
   </ol>
   <a href='/vendors/@Model["vendor"].Id/orders/new'>New Order |</a>
   <a href='/vendors'>View Vendors |</a>
- <a href='/'>Home</a>
+  <a href='/'>Home</a>
+  <form action='/vendors/@Model["vendor"].Id/delete' method="post">
+    <button type="submit" name="button" class="btn btn-danger btn-sm">Delete Vendor</button>
+  </form>
 </div>

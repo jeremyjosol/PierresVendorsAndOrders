@@ -52,5 +52,15 @@ namespace PierresVendorsAndOrders.Controllers
       Vendor.ClearAll();
       return RedirectToAction("Index");
     }
+    [HttpPost("/vendors/{vendorId}/delete")]
+    public ActionResult DeleteVendor(int vendorId)
+    {
+      Vendor deleteVendorById = Vendor.Find(vendorId);
+      if (deleteVendorById != null)
+      {
+        Vendor.GetAll().Remove(deleteVendorById);
+      }
+      return RedirectToAction("Index");
+    }
   }
 }
