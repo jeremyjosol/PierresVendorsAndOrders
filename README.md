@@ -8,7 +8,7 @@ Pierre, the artisan baker, inquired about a new project for a web application ta
 
 ## Application Setup
 
-1. Clone the repository `https://github.com/jeremyjosol/sep222023_PierresVendorsAndOrders`
+1. Clone the repository `https://github.com/jeremyjosol/sep292023_PierresVendorsAndOrders`
 
 2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory `PierresVendorsAndOrders`.
 
